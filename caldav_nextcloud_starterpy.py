@@ -60,6 +60,7 @@ if len(calendars) > 0:
         # Überprüfung von ganztägigen Events
         eventTime = e.dtstart.value.strftime("%D")
         print("{eventTime} {eventSummary}".format(eventTime=eventTime, eventSummary=e.summary.value))
+        appointment="{eventTime} {eventSummary}".format(eventTime=eventTime, eventSummary=e.summary.value) ## Unsere Aufruf Variabel
       else:
         # This is a "normal" event
         eventTime = e.dtstart.value.strftime("%H:%M")
