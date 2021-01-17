@@ -5,7 +5,7 @@ from caldav.elements import dav
 from datetime import datetime, timedelta, time
 today  = datetime.combine(datetime.today(), time(0,0))
 # Caldav url
-# Works on both Win or Linux
+# Works on both Win or LinuxS
 username = os.environ.get('_siNextcloudUser')
 password = os.environ.get('_siNextcloudPW')
 
